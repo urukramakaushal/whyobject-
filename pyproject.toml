@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whyobject"
+version = "0.1.0"
+description = "Find the exact cells that stop pandas from reading a column as numbers or dates."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["pandas"]
+license = { text = "MIT" }
+
+[project.scripts]
+whyobject = "whyobject.cli:main"
+
+[tool.setuptools]
+packages = ["whyobject"]
